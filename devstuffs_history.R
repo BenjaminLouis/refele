@@ -16,7 +16,7 @@ my_desc$set_version("0.0.0.9000")
 # The title of your package
 my_desc$set(Title = "refele : a package for the EFELE project")
 # The description of your package
-my_desc$set(Description = "This package contains several functions to import, tidy and model data from the EFELE project")
+my_desc$set(Description = "Several functions to import, tidy and model data from the EFELE project.")
 # The urls
 my_desc$set("URL", "https://github.com/BenjaminLouis/refele")
 my_desc$set("BugReports", "https://github.com/BenjaminLouis/refele/issues")

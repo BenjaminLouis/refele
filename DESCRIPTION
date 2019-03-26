@@ -2,7 +2,7 @@ Package: refele
 Title: refele : a package for the EFELE project
 Version: 0.0.0.9000
 Authors@R: person('Benjamin', 'Louis', email = 'contact@benjaminlouis-stat.fr', role = c('aut', 'cre'))
-Description: This package contains several functions to import, tidy and model data from the EFELE project
+Description: Several functions to import, tidy and model data from the EFELE project.
 Depends: R (>= 3.5.0)
 License: MIT + file LICENSE
 Encoding: UTF-8
