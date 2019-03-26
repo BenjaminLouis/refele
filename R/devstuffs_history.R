@@ -32,7 +32,6 @@ usethis::use_mit_license(name = "Benjamin Louis")
 usethis::use_readme_md()
 usethis::use_code_of_conduct()
 usethis::use_lifecycle_badge("Experimental")
-usethis::use_news_md()
 
 # For tests
 #usethis::use_testthat()
