@@ -41,11 +41,13 @@ usethis::use_travis()
 usethis::use_appveyor()
 usethis::use_coverage()
 
+# Vignette
+usethis::use_vignette("refele")
+#devtools::build_vignettes()
+
 # Reorder your DESC
 attachment::att_to_description()
 usethis::use_tidy_description()
 
-# Vignette
-#usethis::use_vignette("wimpress")
-#devtools::build_vignettes()
+
 
