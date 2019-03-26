@@ -1,17 +1,28 @@
 Package: refele
 Title: refele : a package for the EFELE project
 Version: 0.0.0.9000
-Authors@R: person('Benjamin', 'Louis', email = 'contact@benjaminlouis-stat.fr', role = c('aut', 'cre'))
-Description: Several functions to import, tidy and model data from the EFELE project.
-Depends: R (>= 3.5.0)
+Authors@R: 
+    person(given = "Benjamin",
+           family = "Louis",
+           role = c("aut", "cre"),
+           email = "contact@benjaminlouis-stat.fr")
+Description: Several functions to import, tidy and model data
+    from the EFELE project.
 License: MIT + file LICENSE
-Encoding: UTF-8
-LazyData: true
 URL: https://github.com/BenjaminLouis/refele
 BugReports: https://github.com/BenjaminLouis/refele/issues
+Depends: 
+    R (>= 3.5.0)
+Imports: 
+    dplyr,
+    lubridate
 Suggests: 
-    testthat,
     covr,
     knitr,
-    rmarkdown
-VignetteBuilder: knitr
+    rmarkdown,
+    testthat
+VignetteBuilder: 
+    knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
