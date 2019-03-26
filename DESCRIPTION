@@ -4,7 +4,7 @@ Version: 0.0.0.9000
 Authors@R: person('Benjamin', 'Louis', email = 'contact@benjaminlouis-stat.fr', role = c('aut', 'cre'))
 Description: This package contains several functions to import, tidy and model data from the EFELE project
 Depends: R (>= 3.5.0)
-License: What license is it under?
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/BenjaminLouis/refele
