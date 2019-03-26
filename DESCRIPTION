@@ -10,4 +10,5 @@ LazyData: true
 URL: https://github.com/BenjaminLouis/refele
 BugReports: https://github.com/BenjaminLouis/refele/issues
 Suggests: 
-    testthat
+    testthat,
+    covr

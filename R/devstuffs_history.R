@@ -36,6 +36,11 @@ usethis::use_lifecycle_badge("Experimental")
 # For tests
 usethis::use_testthat()
 
+# Codecov
+usethis::use_travis()
+usethis::use_appveyor()
+usethis::use_coverage()
+
 # Reorder your DESC
 attachment::att_to_description()
 usethis::use_tidy_description()
@@ -44,10 +49,3 @@ usethis::use_tidy_description()
 #usethis::use_vignette("wimpress")
 #devtools::build_vignettes()
 
-# Versionning
-usethis::use_git()
-
-# Codecov
-usethis::use_travis()
-usethis::use_appveyor()
-usethis::use_coverage()

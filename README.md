@@ -1,5 +1,7 @@
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
-
+[![Travis build status](https://travis-ci.org/BenjaminLouis/refele.svg?branch=master)](https://travis-ci.org/BenjaminLouis/refele)
+[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/BenjaminLouis/refele?branch=master&svg=true)](https://ci.appveyor.com/project/BenjaminLouis/refele)
+[![Coverage status](https://codecov.io/gh/BenjaminLouis/refele/branch/master/graph/badge.svg)](https://codecov.io/github/BenjaminLouis/refele?branch=master)
 
 # refele
 
