@@ -34,8 +34,7 @@ usethis::use_code_of_conduct()
 usethis::use_lifecycle_badge("Experimental")
 
 # For tests
-#usethis::use_testthat()
-#usethis::use_test("app")
+usethis::use_testthat()
 
 # Reorder your DESC
 attachment::att_to_description()
