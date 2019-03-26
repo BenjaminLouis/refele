@@ -13,7 +13,11 @@
 #' @importFrom lubridate as_datetime floor_date
 #'
 #' @examples
-#' #find an example
+#' library(dplyr)
+#' library(lubridate)
+#' dat <- meteoClermont %>%
+#'   mutate(date = ymd_hms(date))
+#' summarise_daily(dat, date, wind_dir:pres, precipitation)
 summarise_daily <- function(.data, .timevar, .cumul, .average) {
 
   # Tidy eval

@@ -22,5 +22,9 @@ a dataframe with the requested columns summarised at a daily scale
 Summarise (sum or average) time series data at a daily scale
 }
 \examples{
-#find an example
+library(dplyr)
+library(lubridate)
+dat <- meteoClermont \%>\%
+  mutate(date = ymd_hms(date))
+summarise_daily(dat, date, wind_dir:pres, precipitation)
 }
