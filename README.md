@@ -23,6 +23,10 @@ This is a basic example which shows you how to solve a common problem:
 ## basic example code
 ```
 
+# Credits
+
+Example dataset comes from [Météo-france](https://donneespubliques.meteofrance.fr/?fond=produit&id_produit=90&id_rubrique=32)
+
 # Code of conduct
 
 Please note that the 'refele' project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By contributing to this project, you agree to abide by its terms.
