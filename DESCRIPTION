@@ -1,9 +1,11 @@
 Package: refele
-Title: What the Package Does (one line, title case)
+Title: refele : a package for the EFELE project
 Version: 0.0.0.9000
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-Depends: R (>= 3.5.1)
+Authors@R: person('Benjamin', 'Louis', email = 'contact@benjaminlouis-stat.fr', role = c('aut', 'cre'))
+Description: This package contains several functions to import, tidy and model data from the EFELE project
+Depends: R (>= 3.5.0)
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
+URL: https://github.com/BenjaminLouis/refele
+BugReports: https://github.com/BenjaminLouis/refele/issues
