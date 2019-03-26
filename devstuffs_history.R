@@ -33,8 +33,12 @@ usethis::use_readme_md()
 usethis::use_code_of_conduct()
 usethis::use_lifecycle_badge("Experimental")
 
+# Add data
+usethis::use_data_raw()
+
 # For tests
 usethis::use_testthat()
+usethis::use_test("summarise_daily")
 
 # Codecov
 usethis::use_travis()
