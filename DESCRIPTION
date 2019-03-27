@@ -18,6 +18,7 @@ Imports:
     lubridate
 Suggests: 
     covr,
+    ggplot2,
     knitr,
     rmarkdown,
     testthat

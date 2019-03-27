@@ -16,4 +16,51 @@ knitr::opts_chunk$set(
 )
 ```
 
+```{r}
+library(refele)
+```
+
+## Summarise hourly climatic data towards daily climatic data
+
+Climatic data can be obtained at hourly intervals but need to be used at daily scale. Function `summarise_daily` allows to summarise hourly climatic data towards daily climatic data either by calculating a cumulative sum of the data aver each day (e.g. for precipitation data) or by calculating a daily mean value of the data (e.g. for temperature data).
+
+You can see how ti use the function with :
+
+```{r eval = FALSE}
+?sumarise_daily
+```
+
+Here is an example with 3-hours interval climatic dataset :
+
+```{r}
+library(dplyr, warn.conflicts = FALSE)
+library(lubridate, warn.conflicts = FALSE)
+# Convert date time column to date time class
+hourlydat <- meteoClermont %>%
+  mutate(date = ymd_hms(date))
+# Run the function
+dailydat <- summarise_daily(.data = hourlydat, .timevar = date, .cumul = precipitation , 
+                .average = wind_dir:pres)
+```
+
+`summarise_daily` accept a dataframe (`.data`) with a column corresponding to the date and time of data measurement (`.timevar`). If the classe of `.timevar` is not a R Date-Time class (`POSIXct`), the function will try to parse it but you will get a warnings that you should do it on your own before, to be sure that the good format is used. In this example, function `lubridate::ymd_hms` is used in order to do it. 
+
+Argument `.cumul` is used to give the name of columns that need to be summed and `.average` is used to the column that need to be averaged. Here, all columns betweens `wind_dir` and `pres` are averaged and only the column `precipitation` is summed.
+
+We can see the graph of wind direction measured at hourly intervals (black dots) and its daily mean (blue line) :
+
+```{r warning = FALSE, out.width = '95%', fig.width = 7, fig.asp = 1, dpi = 300, fig.align = 'center'}
+library(ggplot2)
+dat <- left_join(
+  select(hourlydat, date, wind_dir_hourly = wind_dir) %>% 
+    mutate(the_days = floor_date(date, unit = "day")),
+  select(dailydat, the_days, wind_dir_daily = wind_dir),
+  by = "the_days"
+)
+ggplot(dat) +
+  geom_point(aes(x = date, y = wind_dir_hourly), shape = 20, colour = "black") +
+  geom_line(aes(x = date, y = wind_dir_daily), colour = "blue") +
+  labs(x = "Date", y = "Wind direction")
+```
+
 

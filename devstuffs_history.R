@@ -47,7 +47,7 @@ usethis::use_coverage()
 
 # Vignette
 usethis::use_vignette("refele")
-#devtools::build_vignettes()
+devtools::build_vignettes()
 
 # Reorder your DESC
 attachment::att_to_description()

@@ -26,5 +26,5 @@ library(dplyr)
 library(lubridate)
 dat <- meteoClermont \%>\%
   mutate(date = ymd_hms(date))
-summarise_daily(dat, date, wind_dir:pres, precipitation)
+summarise_daily(dat, date, precipitation, wind_dir:pres)
 }
